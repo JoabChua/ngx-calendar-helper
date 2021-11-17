@@ -42,3 +42,16 @@ Put the ngx-calendar-helper component wherever you need it.
 | ----------------- | :---------------: | :------: | :----------------------------------------------------------------: |
 | calendarType      | `"month"\|"year"` | `"year"` |          The mode of the calender which will be displayed          |
 | showToggleButtons |     `Boolean`     |   true   | Show or hide the default toggle button for month and year calendar |
+| calendarEvents    |      `array`      |    []    |      Pass in array of events to be displayed in the calendar       |
+
+```ts
+calendarEvent: {
+  title: string;
+  date: string;
+}
+[] = [
+  { title: "This is a special day", date: "2021-11-07" },
+  { title: "This is a good day", date: "2021-01-27" },
+  { title: "This is a nice day", date: "2021-08-17" },
+];
+```
