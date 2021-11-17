@@ -1,27 +1,44 @@
-# LibWorkspace
+# Angular Calendar Helper
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0. This is a simple calendar helper build to show events in month or year style.
 
-## Development server
+## Screenshots
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Month Calendar:
 
-## Code scaffolding
+![Month Cal](./assets/s1.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Month Calendar - Event Selected:
 
-## Build
+![Month Cal with events](./assets/s2.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Year Calendar:
 
-## Running unit tests
+![Year Cal](./assets/s3.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Year Calendar - Event Selected:
 
-## Running end-to-end tests
+![Year Cal with events](./assets/s4.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Installation:
 
-## Further help
+1. Download from npm:
+   `npm install ngx-calendar-helper --save`
+2. Import the `NgxCalendarHelperModule` module:
+   `import {NgxCalendarHelperModule} from 'ngx-calendar-helper';`
+3. Add `NgxCalendarHelperModule` to your module imports:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```ts
+ @NgModule({ ... imports: [ ... NgxCalendarHelperModule ] })
+```
+
+## Usage
+
+Put the ngx-calendar-helper component wherever you need it.
+
+### Attributes (Input):
+
+| Name              |       Type        | Default  |                            Description                             |
+| ----------------- | :---------------: | :------: | :----------------------------------------------------------------: |
+| calendarType      | `"month"\|"year"` | `"year"` |          The mode of the calender which will be displayed          |
+| showToggleButtons |     `Boolean`     |   true   | Show or hide the default toggle button for month and year calendar |
