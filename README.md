@@ -1,6 +1,8 @@
 # Angular Calendar Helper
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0. This is a simple calendar helper build to show events in month or year style.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0.
+
+This is a simple calendar helper build to show events in month or year style.
 
 ## Screenshots
 

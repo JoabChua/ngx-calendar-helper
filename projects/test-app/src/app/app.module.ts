@@ -1,4 +1,4 @@
-import { NgxCalendarHelperModule } from './../../../components/src/lib/ngx-calendar-helper/ngx-calendar-helper.module';
+import { NgxCalendarHelperModule } from 'ngx-calendar-helper';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 

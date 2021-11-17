@@ -1,24 +1,57 @@
-# NgxCalendarHelper
+# Angular Calendar Helper
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0. This is a simple calendar helper build to show events in month or year style.
 
-## Code scaffolding
+## Screenshots
 
-Run `ng generate component component-name --project ngx-calendar-helper` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-calendar-helper`.
-> Note: Don't forget to add `--project ngx-calendar-helper` or else it will be added to the default project in your `angular.json` file. 
+### Month Calendar:
 
-## Build
+![Month Cal](https://github.com/JoabChua/ngx-calendar-helper/blob/main/projects/components/src/assets/s1.png)
 
-Run `ng build ngx-calendar-helper` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Month Calendar - Event Selected:
 
-## Publishing
+![Month Cal with events](https://github.com/JoabChua/ngx-calendar-helper/blob/main/projects/components/src/assets/s2.png)
 
-After building your library with `ng build ngx-calendar-helper`, go to the dist folder `cd dist/ngx-calendar-helper` and run `npm publish`.
+### Year Calendar:
 
-## Running unit tests
+![Year Cal](https://github.com/JoabChua/ngx-calendar-helper/blob/main/projects/components/src/assets/s3.png)
 
-Run `ng test ngx-calendar-helper` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Year Calendar - Event Selected:
 
-## Further help
+![Year Cal with events](https://github.com/JoabChua/ngx-calendar-helper/blob/main/projects/components/src/assets/s4.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Installation:
+
+1. Download from npm:
+   `npm install ngx-calendar-helper --save`
+2. Import the `NgxCalendarHelperModule` module:
+   `import {NgxCalendarHelperModule} from 'ngx-calendar-helper';`
+3. Add `NgxCalendarHelperModule` to your module imports:
+
+```ts
+ @NgModule({ ... imports: [ ... NgxCalendarHelperModule ] })
+```
+
+## Usage
+
+Put the ngx-calendar-helper component wherever you need it.
+
+### Attributes (Input):
+
+| Name              |       Type        | Default  |                            Description                             |
+| ----------------- | :---------------: | :------: | :----------------------------------------------------------------: |
+| calendarType      | `"month"\|"year"` | `"year"` |          The mode of the calender which will be displayed          |
+| showToggleButtons |     `Boolean`     |   true   | Show or hide the default toggle button for month and year calendar |
+| calendarEvents    |      `array`      |    []    |      Pass in array of events to be displayed in the calendar       |
+
+```ts
+calendarEvent: {
+  title: string;
+  date: string;
+}
+[] = [
+  { title: "This is a special day", date: "2021-11-07" },
+  { title: "This is a good day", date: "2021-01-27" },
+  { title: "This is a nice day", date: "2021-08-17" },
+];
+```

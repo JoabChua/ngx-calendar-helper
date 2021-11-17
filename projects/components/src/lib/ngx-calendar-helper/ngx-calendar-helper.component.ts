@@ -4,7 +4,6 @@ import {
   MonthCalendarDay,
   YearCalendarDay,
 } from './ngx-calendar-helper.config';
-import * as moment from 'moment';
 
 @Component({
   selector: 'ngx-calendar-helper',
@@ -34,9 +33,11 @@ export class NgxCalendarHelperComponent implements OnInit {
 
   ngOnInit() {
     const today = new Date();
-    this.today = moment().format('YYYY-MM-DD');
+    const dd = today.getDate();
     this.currentMonth = today.getMonth();
     this.currentYear = today.getFullYear();
+    this.today = `${this.currentYear}-${this.currentMonth + 1}-${dd}`;
+    // this.today = moment().format('YYYY-MM-DD');
     this.showMonthCalendar(this.currentMonth, this.currentYear);
     this.showYearCalendar();
   }
