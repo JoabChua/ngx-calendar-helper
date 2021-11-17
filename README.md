@@ -6,19 +6,19 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ### Month Calendar:
 
-![Month Cal](./assets/s1.png)
+![Month Cal](https://github.com/JoabChua/ngx-calendar-helper/tree/main/projects/components/src/assets/s1.png)
 
 ### Month Calendar - Event Selected:
 
-![Month Cal with events](./assets/s2.png)
+![Month Cal with events](https://github.com/JoabChua/ngx-calendar-helper/tree/main/projects/components/src/assets/s2.png)
 
 ### Year Calendar:
 
-![Year Cal](./assets/s3.png)
+![Year Cal](https://github.com/JoabChua/ngx-calendar-helper/tree/main/projects/components/src/assets/s3.png)
 
 ### Year Calendar - Event Selected:
 
-![Year Cal with events](./assets/s4.png)
+![Year Cal with events](https://github.com/JoabChua/ngx-calendar-helper/tree/main/projects/components/src/assets/s4.png)
 
 ## Installation:
 
